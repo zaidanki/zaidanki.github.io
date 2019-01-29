@@ -138,6 +138,9 @@ function spanAppend(element, id) { // this is for the error if information is mi
 }
 spanAppend('#name', 'nameSpan')
 
+function numberAppen(element, id, digit){
+$(element).prev().append('<div class="tooltip" style="color:red;" id=' + id + '> Make sure you have ' + digit +' digites in there! </div>')
+}
 
 $('#name').on('keyup', function() { // this function is going to be repeated ( only because i was only required to do one, but i decided to do all of them) it is to make sure that tooltip occurs when needed
     if (!/^[a-zA-Z]+/.test($('#name').val()) || $('#name').val() === "") {
@@ -159,7 +162,7 @@ $('#mail').on('keyup', function() {
 })
 $('#mailSpan').hide()
 
-spanAppend('#cc-num', 'ccSpan')
+numberAppen('#cc-num', 'ccSpan', '13 to 16')
 
 $('#cc-num').parent().on('keyup', function() {
     if (!/^\d{13,16}$/.test($('#cc-num').val())) {
@@ -170,7 +173,7 @@ $('#cc-num').parent().on('keyup', function() {
 })
 $('#ccSpan').hide()
 
-spanAppend('#zip', 'zipSpan')
+numberAppen('#zip', 'zipSpan', 5)
 
 $('#zip').parent().on('keyup', function() {
     if (!/^\d{5}$/.test($('#zip').val())) {
@@ -181,7 +184,7 @@ $('#zip').parent().on('keyup', function() {
 })
 $('#zipSpan').hide()
 
-spanAppend('#cvv', 'cvvSpan')
+numberAppen('#cvv', 'cvvSpan', 3)
 
 $('#cvv').parent().on('keyup', function() {
     if (!/^\d{3}$/.test($('#cvv').val())) {
@@ -193,7 +196,7 @@ $('#cvv').parent().on('keyup', function() {
 $('#cvvSpan').hide()
 
 $('button').click(function(e) { // and last function to make sure that everything is entered correctly, if not register button will do nothing except for pop up an alert!
-
+if(/Credit Card/gim.test($('#payment').val())){
     if (/^[a-zA-Z]+/.test($('#name').val()) && $('#name').val !== "" &&
         /[\w-]+@([\w-]+\.)+[\w-]+/.test($('#mail').val()) &&
         /^\d{13,16}$/.test($('#cc-num').val()) &&
@@ -205,4 +208,11 @@ $('button').click(function(e) { // and last function to make sure that everythin
         e.preventDefault()
         alert('Check your infomation again!')
     }
+  }else if (/^[a-zA-Z]+/.test($('#name').val()) && $('#name').val !== "" &&
+        /[\w-]+@([\w-]+\.)+[\w-]+/.test($('#mail').val())){
+          console.log('hi')
+      } else {
+          e.preventDefault()
+          alert('Check your infomation again!')
+        }
 })
