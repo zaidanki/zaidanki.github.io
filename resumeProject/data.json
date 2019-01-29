@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "title": "A Random Quote Generator",
+      "disc": "An app that generates Random Quotes without repeating the same quote twice!",
+      "live": "https://zaidanki.github.io/randomQuote/",
+      "rep": "https://github.com/zaidanki/zaidanki.github.io/tree/master/randomQuote",
+      "img": "/static/img/project0.png",
+      "imgs": [
+        "/static/img/project0/pic0.png",
+        "/static/img/project0/pic1.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "1",
+      "title": "A list and Pagination Filter",
+      "disc" : "An app that offers pagination and filtering through a dynamic search engine!",
+      "live": "https://zaidanki.github.io/list/",
+      "rep": "https://github.com/zaidanki/zaidanki.github.io/tree/master/list",
+      "img": "/static/img/project1.png",
+      "imgs": [
+        "/static/img/project1/pic0.png",
+        "/static/img/project1/pic1.png",
+        "/static/img/project1/pic2.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "An interactive Form",
+      "disc": "An app that produces a top quality form that only accepts submit once criteria is satisfied",
+      "live": "https://zaidanki.github.io/interactiveForm/",
+      "rep": "https://github.com/zaidanki/zaidanki.github.io/tree/master/interactiveForm",
+      "img": "/static/img/project2.png",
+      "imgs": [
+        "/static/img/project2/pic0.png",
+        "/static/img/project2/pic1.png",
+        "/static/img/project2/pic2.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JQuery"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Public Fetch Api",
+      "disc": "An app the fetches a public Api and has a dynamic search engine!",
+      "live": "https://zaidanki.github.io/publicApi/",
+      "rep": "https://github.com/zaidanki/zaidanki.github.io/tree/master/publicApi",
+      "img": "/static/img/project3.png",
+      "imgs": [
+        "/static/img/project3/pic0.png",
+        "/static/img/project3/pic1.png",
+        "/static/img/project3/pic2.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Phrase Hunter",
+      "disc": "A phrase hunter game app!",
+      "live": "https://zaidanki.github.io/phunter/",
+      "rep": "https://github.com/zaidanki/zaidanki.github.io/tree/master/phunter",
+      "img": "/static/img/project4.png",
+      "imgs": [
+        "/static/img/project4/pic0.png",
+        "/static/img/project4/pic1.png",
+        "/static/img/project4/pic2.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ]
+}

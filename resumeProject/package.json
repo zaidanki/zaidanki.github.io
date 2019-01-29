@@ -1,0 +1,17 @@
+{
+  "name": "porject6",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2"
+  },
+  "description": "I have changed the CSS a bit, made imgs on\r first page go round when hovered,\r made images pop up on the project page\r made links pop up on project and about page\r (github/demo)\r made all error requirements for exceeds.",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "Zaid Anki",
+  "license": "ISC"
+}
